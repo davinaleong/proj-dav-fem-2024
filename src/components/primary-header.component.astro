@@ -1,0 +1,17 @@
+---
+import { Image } from 'astro:assets'
+import logo from "../assets/images/logo-png.png"
+const { APP_NAME, APP_DAVDEVS } = import.meta.env
+---
+<header class="primary-header">
+    <div class="wrapper | mx-auto p-4">
+        <a href={APP_DAVDEVS} target="_blank">Back to Dav/Devs</a>
+
+        <a href="/" class="brand">
+            <Image src={logo} alt={APP_NAME} class="brand__img" />
+            <span class="sr-only">{APP_NAME}</span>
+        </a>
+
+        <a href="#top">Back to Top</a>
+    </div>
+</header>

@@ -1,0 +1,47 @@
+---
+import "../styles/app.scss"
+import favicon from "./../assets/images/logo-png.png"
+import PrimaryHeader from "../components/primary-header.component.astro"
+import PrimaryFooter from "../components/primary-footer.component.astro"
+
+const { APP_NAME, APP_AUTHOR, APP_DESCRIPTION, APP_KEYWORDS, APP_YEAR } = import.meta.env
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="author" content={APP_AUTHOR}>
+		<meta name="description" content={APP_DESCRIPTION}>
+		<meta name="keywords" content={APP_KEYWORDS}>
+
+		<link rel="icon" type="image/png" href={favicon.src} />
+
+		<title>{APP_NAME}</title>
+	</head>
+	<body id="top">
+		<a href="#main" class="btn btn-skip-navigation">
+			Skip Navigation
+		</a>
+
+		<button class="btn btn-theme" type="button" data-element="btn-theme">
+			<span class="btn-theme__label btn-theme__label-light">
+			  <i class="fa-light fa-sharp fa-lightbulb-on"></i>
+			  <span class="btn-theme__label__text">Light</span>
+			</span>
+			<span class="btn-theme__label btn-theme__label-dark">
+			  <i class="fa-light fa-sharp fa-lightbulb-slash"></i>
+			  <span class="btn-theme__label__text">Dark</span>
+			</span>
+		</button>
+
+		<PrimaryHeader />
+
+		<main id="main" class="primary-main | container-q container-q-primary-main">
+			<slot />
+		</main>
+
+		<PrimaryFooter />
+	</body>
+</html>
