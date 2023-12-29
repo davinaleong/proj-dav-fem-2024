@@ -1,0 +1,33 @@
+/// Home
+
+.section-home {
+  &-hero {
+    --_section-height: 40vh;
+
+    color: theme("colors.neutral.50");
+    background-color: theme("colors.blue.500");
+
+    a {
+      --_a-clr: theme("colors.neutral.50");
+      --_a-td: underline;
+      --_a-hover-clr: theme("colors.sky.200");
+      --_a-hover-td: underline;
+    }
+
+    &__heading {
+      color: theme("colors.neutral.50");
+    }
+
+    & > .section__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: theme("gap.4");
+    }
+
+    &-content {
+      background-color: theme("colors.slate.200");
+    }
+  }
+}

@@ -88,13 +88,13 @@ a {
 }
 
 .container-q {
-  --_container-name: container-q;
+  --_container-q-name: container-q;
 
-  container-name: var(--_container-name);
+  container-name: var(--_container-q-name);
   container-type: inline-size;
 
   &-primary-main {
-    --_container-name: container-q-primary-main;
+    --_container-q-name: container-q-primary-main;
 
     position: relative;
   }
