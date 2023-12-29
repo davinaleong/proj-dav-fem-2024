@@ -1,0 +1,10 @@
+/// Brand
+
+.brand {
+  --_brand-img: 8ch;
+
+  &__img {
+    max-width: var(--_brand-img);
+    min-height: var(--_brand-img);
+  }
+}

@@ -1,0 +1,21 @@
+/// Primary Header
+
+.primary-header {
+  position: sticky;
+  top: 0;
+  background-color: theme("colors.blue.500");
+  z-index: 1;
+
+  a {
+    --_a-clr: theme("colors.neutral.50");
+    --_a-td: none;
+    --_a-hover-clr: theme("colors.neutral.50");
+    --_a-hover-td: underline;
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

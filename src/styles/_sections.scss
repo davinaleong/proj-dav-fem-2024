@@ -1,0 +1,11 @@
+/// Sections
+
+.section {
+  --_section-height: 100vh;
+
+  min-height: var(--_section-height);
+
+  & > .wrapper {
+    min-height: var(--_section-height);
+  }
+}
