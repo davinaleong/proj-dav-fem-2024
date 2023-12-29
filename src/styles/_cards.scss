@@ -1,0 +1,27 @@
+/// Cards
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: theme("gap.4");
+}
+
+.card {
+  border-radius: theme("borderRadius.sm");
+  box-shadow: theme("boxShadow.md");
+  overflow: hidden;
+
+  &__body {
+    padding-block: theme("spacing.2");
+    padding-inline: theme("spacing.4");
+  }
+
+  &__footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    text-align: center;
+    padding-block: theme("spacing.2");
+    padding-inline: theme("spacing.4");
+  }
+}

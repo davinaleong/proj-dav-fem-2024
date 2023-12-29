@@ -1,0 +1,18 @@
+---
+import { Image } from 'astro:assets'
+import placeholder from "../assets/images/placeholder.png"
+---
+<div class="card">
+    <Image src={placeholder} alt="Placeholder" class="card__image" />
+    <div class="card__body | flow">
+        <h2 class="text-2xl">
+            Lorem Ipsum
+        </h2>
+        <p><em>20 Apr 2022</em></p>
+    </div>
+    <div class="card__footer">
+        <a href="#" class="link-primary" target="_blank">View Demo</a>
+        <a href="#" class="link-primary" target="_blank">View Repo</a>
+        <a href="#" class="link-primary" target="_blank">View Challenge</a>
+    </div>
+</div>
