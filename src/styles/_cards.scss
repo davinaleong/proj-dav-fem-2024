@@ -17,6 +17,11 @@
   box-shadow: theme("boxShadow.md");
   overflow: hidden;
 
+  &__image {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+
   &__body {
     padding-block: theme("spacing.2");
     padding-inline: theme("spacing.4");
