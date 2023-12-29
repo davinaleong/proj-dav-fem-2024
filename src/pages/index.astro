@@ -1,16 +1,53 @@
 ---
+import "../styles/app.scss"
+import favicon from "./../assets/images/logo-png.png"
 
+import { Image } from 'astro:assets'
+import logo from "../assets/images/logo-png.png"
+const { APP_NAME, APP_AUTHOR, APP_DESCRIPTION, APP_KEYWORDS, APP_DAVDEVS, APP_YEAR } = import.meta.env
+
+const now = new Date().getFullYear()
+const copyrightYear: string = now === APP_YEAR ? `${APP_YEAR}` : `${APP_YEAR} - ${now}`
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<meta name="author" content={APP_AUTHOR}>
+		<meta name="description" content={APP_DESCRIPTION}>
+		<meta name="keywords" content={APP_KEYWORDS}>
+
+		<link rel="icon" type="image/png" href={favicon.src} />
+
+		<title>{APP_NAME}</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<header class="primary-header">
+			<div class="wrapper mx-auto p-4">
+				<a href={APP_DAVDEVS} target="_blank">Back to Dav/Devs</a>
+
+				<a href="/" class="brand">
+					<Image src={logo} alt={APP_NAME} />
+					<span class="sr-only">{APP_NAME}</span>
+				</a>
+
+				<a href="#top">Back to Top</a>
+			</div>
+		</header>
+
+		<main class="primary-main">
+			<div class="wrapper mx-auto p-4">
+				<h1>{APP_NAME}</h1>
+				<p>Coming Soon!</p>
+			</div>
+		</main>
+
+		<footer class="primary-footer">
+			<div class="wrapper mx-auto p-4">
+				<p>{APP_NAME} &copy; {copyrightYear}</p>
+			</div>
+		</footer>
 	</body>
 </html>

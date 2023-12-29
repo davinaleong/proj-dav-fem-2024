@@ -1,0 +1,135 @@
+// General Custom Styles
+:root {
+  --primary-header-height: 2.95em;
+  --content-width: 1200px;
+  --small-content-width: 60ch;
+  --dialog-width: 320px;
+  --flow-spacer: theme("gap.4");
+  --perspective: 400px;
+}
+
+body {
+  color: theme("colors.neutral.800");
+  background-color: theme("colors.neutral.50");
+  font-size: theme("fontSize.base");
+  font-family: theme("fontFamily.sans");
+  font-weight: theme("fontWeight.normal");
+  position: relative;
+  min-height: 100vh;
+
+  &.theme-dark,
+  &[data-theme="dark"] {
+    color: theme("colors.neutral.200");
+    background-color: theme("colors.neutral.950");
+  }
+}
+
+:focus {
+  outline: 0.1em solid theme("colors.neutral.800");
+  border-radius: theme("borderRadius.md");
+}
+
+a {
+  --_a-clr: theme("colors.blue.500");
+  --_a-td: none;
+
+  --_a-hover-clr: theme("colors.blue.500");
+  --_a-hover-td: underline;
+
+  color: var(--_a-clr);
+  text-decoration: var(--_a-td);
+
+  &:hover {
+    color: var(--_a-hover-clr);
+    text-decoration: var(--_a-hover-td);
+  }
+}
+
+.flow {
+  --_flow-spacer: var(--flow-spacer);
+
+  & > * + * {
+    margin-block-start: var(--_flow-spacer);
+  }
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.content-grid {
+  --_width: var(--content-width);
+
+  display: grid;
+  grid-template-columns: 0.1fr [breakout-start] 0.2fr [content-start] 1fr [content-end] 0.2fr [breakout-end] 0.1fr;
+
+  & > * {
+    grid-column: content;
+  }
+
+  &-breakout {
+    & > * {
+      grid-column: breakout;
+    }
+  }
+
+  &-full-width {
+    & > * {
+      grid-column: full-width;
+    }
+  }
+}
+
+.wrapper {
+  --_wrapper-width: var(--content-width);
+
+  width: min(100%, var(--_wrapper-width));
+}
+
+.container-q {
+  --_container-name: container-q;
+
+  container-name: var(--_container-name);
+  container-type: inline-size;
+
+  &-primary-main {
+    --_container-name: container-q-primary-main;
+
+    position: relative;
+  }
+}
+
+ul.list {
+  list-style-type: disc;
+  margin-inline-start: theme("padding.4");
+}
+
+ol.list {
+  list-style-type: decimal;
+  margin-inline-start: theme("padding.4");
+}
+
+.theme-dark,
+[data-theme="dark"] {
+  :focus {
+    outline: 0.1em solid theme("colors.neutral.800");
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: theme("colors.neutral.200");
+    background-color: theme("colors.neutral.950");
+  }
+
+  :focus {
+    outline: 0.1em solid theme("colors.neutral.300");
+  }
+}
+
+@media print {
+  body {
+    color: theme("colors.black");
+    background-color: theme("colors.white");
+  }
+}
