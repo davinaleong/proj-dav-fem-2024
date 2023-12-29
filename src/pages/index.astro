@@ -4,11 +4,6 @@ import CardComponent from "../components/card.component.astro"
 
 let projects = await Astro.glob("../content/projects/*.md")
 
-// projects = projects.map((project: any) => ({
-//   ...project,
-//   date: new Date(project.frontmatter.date)
-// }));
-
 projects.sort((a, b) => {
 	const dateA = new Date(a.frontmatter.date).getTime()
 	const dateB = new Date(b.frontmatter.date).getTime()
