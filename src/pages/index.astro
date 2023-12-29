@@ -1,18 +1,20 @@
 ---
-import dayjs from 'dayjs'
-
 import MainLayout from '../layouts/main.layout.astro'
-import PlaceholderComponent from "../components/placeholder.component.astro"
 import CardComponent from "../components/card.component.astro"
 
 let projects = await Astro.glob("../content/projects/*.md")
 
-projects = projects.map((project: any) => ({
-  ...project,
-  date: new Date(project.frontmatter.date)
-}));
+// projects = projects.map((project: any) => ({
+//   ...project,
+//   date: new Date(project.frontmatter.date)
+// }));
 
-projects.sort((a, b) => b.date - a.date);
+projects.sort((a, b) => {
+	const dateA = new Date(a.frontmatter.date).getTime()
+	const dateB = new Date(b.frontmatter.date).getTime()
+
+	return dateB - dateA
+});
 ---
 
 <MainLayout>
