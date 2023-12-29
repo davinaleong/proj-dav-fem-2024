@@ -6,6 +6,11 @@
 
     color: theme("colors.neutral.50");
     background-color: theme("colors.blue.500");
+    background-image: linear-gradient(
+      to bottom,
+      theme("colors.blue.500"),
+      theme("colors.blue.700")
+    );
 
     a {
       --_a-clr: theme("colors.neutral.50");

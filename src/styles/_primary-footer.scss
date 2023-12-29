@@ -2,4 +2,9 @@
 
 .primary-footer {
   background-color: theme("colors.slate.800");
+  background-image: linear-gradient(
+    to bottom,
+    theme("colors.slate.800"),
+    theme("colors.slate.700")
+  );
 }

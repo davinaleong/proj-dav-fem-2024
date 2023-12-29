@@ -8,6 +8,11 @@
 
 .card {
   background-color: theme("colors.slate.800");
+  background-image: linear-gradient(
+    to bottom,
+    theme("colors.slate.800") 70%,
+    theme("colors.slate.700")
+  );
   border-radius: theme("borderRadius.sm");
   box-shadow: theme("boxShadow.md");
   overflow: hidden;
