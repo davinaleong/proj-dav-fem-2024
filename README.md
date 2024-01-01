@@ -40,12 +40,16 @@ Welcome to Dav/Devs FEM microsite, your go-to destination for solutions to chall
 
 Browse through our solutions to Frontend Mentor challenges, each meticulously crafted using the latest web development technologies. Learn from our code, discover best practices, and improve your frontend skills.
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/davinaleong/proj-dav-fem-2024/blob/main/LICENSE.md) file for details.
+
 ## Contribution
 
 Feel free to contribute by submitting your solutions or enhancements. Follow our [contribution guidelines](https://chat.openai.com/c/CONTRIBUTING.md) to get started.
 
 ## Feedback
 
-We welcome your feedback! If you have suggestions, improvements, or just want to say hello, please [open an issue](https://github.com/your_username/DavDevs-FEM-Microsite/issues).
+We welcome your feedback! If you have suggestions, improvements, or just want to say hello, please [open an issue](https://github.com/davinaleong/proj-dav-fem-2024/issues).
 
 Happy coding! 🚀
