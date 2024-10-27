@@ -6,11 +6,11 @@ links:
   [
     {
       label: "Demo",
-      href: "https://davinaleong.github.io/fem-multi-step-form/",
+      href: "https://davinaleong.github.io/fem-multistep-form/",
     },
     {
       label: "Repo",
-      href: "https://github.com/davinaleong/fem-multi-step-form",
+      href: "https://github.com/davinaleong/fem-multistep-form",
     },
     {
       label: "Challenge",

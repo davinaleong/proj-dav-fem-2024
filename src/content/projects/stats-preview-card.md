@@ -12,7 +12,7 @@ links:
   [
     {
       label: "Demo",
-      href: "https://github.com/davinaleong/fem-stats-preview-card-component",
+      href: "https://davinaleong.github.io/fem-tip-calculator-app/",
     },
     {
       label: "Repo",

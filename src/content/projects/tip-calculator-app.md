@@ -1,7 +1,7 @@
 ---
 title: "Tip Calculator App"
 date: "2022-07-29"
-images: [{ src: "fem-advice-generator-app.png", alt: "Tip Calculator App" }]
+images: [{ src: "fem-tip-calculator.png", alt: "Tip Calculator App" }]
 links:
   [
     {
