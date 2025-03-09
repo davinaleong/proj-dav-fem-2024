@@ -3,6 +3,10 @@
 .section {
   --_section-height: 100vh;
 
+  &-hero {
+    position: relative;
+  }
+
   min-height: var(--_section-height);
 
   & > .section__wrapper {

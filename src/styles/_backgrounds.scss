@@ -1,0 +1,37 @@
+.bg-h {
+  background-color: theme("colors.neutral.50");
+  background-image: url(./../assets//images/bg-h-m.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  min-height: 56.25em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.bg-f {
+  background-color: theme("colors.neutral.50");
+  background-image: url(./../assets//images/bg-f-m.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  min-height: 56.25em;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (width >= theme("screens.md")) {
+  .bg-h {
+    background-image: url(./../assets//images/bg-h-d.svg);
+  }
+
+  .bg-f {
+    background-image: url(./../assets//images/bg-f-d.svg);
+  }
+}

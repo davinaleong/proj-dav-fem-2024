@@ -21,12 +21,14 @@ projects.sort((a, b) => {
 			</p>
 		</div>
 	</section>
-	
+
 	<section class="section section-hero section-hero-content">
+		<div class="bg-h"></div>
 		<div class="wrapper section__wrapper | mx-auto py-10 px-6">
 			<div class="cards-grid">
 				{projects.map((project: any) => (<CardComponent post={project} />))}
 			</div>
 		</div>
+		<div class="bg-f"></div>
 	</section>
 </MainLayout>
