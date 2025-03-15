@@ -4,7 +4,7 @@
   &-hero {
     --_section-height: 40vh;
 
-    color: theme("colors.neutral.50");
+    color: theme("colors.neutral.950");
     background-color: theme("colors.blue.500");
     // background-image: linear-gradient(
     //   to bottom,
@@ -13,14 +13,14 @@
     // );
 
     a {
-      --_a-clr: theme("colors.neutral.50");
+      --_a-clr: theme("colors.neutral.950");
       --_a-td: underline;
       --_a-hover-clr: theme("colors.sky.200");
       --_a-hover-td: underline;
     }
 
     &__heading {
-      color: theme("colors.neutral.50");
+      color: theme("colors.neutral.950");
     }
 
     & > .section__wrapper {
