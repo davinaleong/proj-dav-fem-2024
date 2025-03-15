@@ -9,11 +9,25 @@
   --perspective: 400px;
 }
 
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  src: url("../assets/fonts/montserrat/Montserrat-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: italic;
+  src: url("../assets/fonts/montserrat/Montserrat-Italic-VariableFont_wght.ttf")
+    format("truetype");
+}
+
 body {
   color: theme("colors.slate.950");
   background-color: theme("colors.neutral.50");
   font-size: theme("fontSize.base");
-  font-family: theme("fontFamily.sans");
+  font-family: "Montserrat", "Arial", sans-serif;
   font-weight: theme("fontWeight.normal");
   position: relative;
   min-height: 100vh;
